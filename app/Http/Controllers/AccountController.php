@@ -48,7 +48,9 @@ class AccountController extends Controller
             ],
             [
                 'identityNumber.required' => 'Must be 10 character',
-                'identityNumber.max' => 'Must be 10 character'
+                'firstName.required' => 'Required',
+                'lastName.required' => 'Required',
+                'phone.required' => 'Required',
             ]
         );
 
@@ -58,7 +60,7 @@ class AccountController extends Controller
         $obj ->firstName = $request->get('firstName');
         $obj ->lastName = $request->get('lastName');
         $obj ->phone = $request->get('phone');
-        $obj ->gender = $request->get('gender');
+//        $obj ->gender = $request->get('gender');
         $obj ->save();
         return redirect('admin/index');
 

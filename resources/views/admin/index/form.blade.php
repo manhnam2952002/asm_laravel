@@ -58,9 +58,6 @@
                     <label for="male">Male</label>
                     <input type="radio" id="css" name="fav_language" value="Famale">
                     <label for="female">Female</label><br>
-                    @error('phone')
-                    <div class="text-danger">* {{ $message }}</div>
-                    @enderror
                 </div>
             </div>
             <div class="form-group">n
