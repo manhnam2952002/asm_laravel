@@ -36,9 +36,6 @@ class AccountRequest extends FormRequest
     {
         return [
             'identityNumber.required' => 'Must be 10 character',
-            'firstName.required' => 'Required',
-            'lastName.required' => 'Required',
-            'phone.required' => 'Required'
         ];
     }
 
